@@ -1,0 +1,14 @@
+<h1>Your Cart</h1>
+<ul>
+    <% products.forEach(product => { %>
+        <li>
+            <h2><%= product.name %></h2>
+            <p>Price: <%= product.price %></p>
+            <img src="<%= product.image %>" alt="<%= product.name %>" style="width:100px;">
+        </li>
+    <% }) %>
+</ul>
+<form action="/checkout" method="POST">
+    <button type="submit">Checkout</button>
+</form>
+<a href="/products">Continue Shopping</a>

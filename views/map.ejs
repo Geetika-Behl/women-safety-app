@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Maps Integration</title>
+    <script src="https://maps.googleapis.com/maps/api/js?key=<%= googleMapsAPIKey %>&callback=initMap" async defer></script>
+    <script>
+        function initMap() {
+            const myLocation = { lat: 28.7041, lng: 77.1025 }; // Default location example for Delhi
+            const map = new google.maps.Map(document.getElementById("map"), {
+                zoom: 12,
+                center: myLocation,
+            });
+            const marker = new google.maps.Marker({
+                position: myLocation,
+                map: map,
+            });
+        }
+    </script>
+</head>
+<body>
+    <h1>Your Current Location</h1>
+    <div id="map" style="height: 500px; width: 100%;"></div>
+</body>
+</html>

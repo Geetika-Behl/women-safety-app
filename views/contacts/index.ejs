@@ -1,0 +1,7 @@
+<h1>Contacts</h1>
+<ul>
+    <% contacts.forEach(contact => { %>
+        <li><a href="/contacts/<%= contact._id %>"><%= contact.name %></a> - <%= contact.phone %></li>
+    <% }) %>
+</ul>
+<a href="/contacts/new">Add New Contact</a>
