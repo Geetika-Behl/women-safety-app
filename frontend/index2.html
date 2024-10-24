@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Women Safety App</title>
+  <link rel="stylesheet" href="style2.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Montserrat:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="navbar">
+      <h1>Women Safety App</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#features">Features</a></li>
+          <li><a href="index3.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Uber Fare Section -->
+    <section id="uber-fare-section" class="animated-section fadeIn">
+      <div class="card animated-card slideInLeft">
+        <h2>Uber Fare Estimate</h2>
+        <div id="fare-details">
+          <p><strong>Start Location:</strong> <span id="start-location"></span></p>
+          <p><strong>End Location:</strong> <span id="end-location"></span></p>
+          <p><strong>Base Fare:</strong> $<span id="fare"></span></p>
+          <p><strong>Margin:</strong> $<span id="margin"></span></p>
+          <p><strong>Final Fare:</strong> $<span id="final-fare"></span></p>
+          <button id="book-uber" class="btn bounceIn">Book Uber</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Product List Section -->
+    <section id="product-list-section" class="animated-section fadeIn">
+      <div class="card animated-card slideInRight">
+        <h2>Women Safety Products</h2>
+        <div id="product-list"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2024 Women Safety App | All Rights Reserved</p>
+  </footer>
+
+  <script src="app2.js"></script>
+</body>
+</html>
